@@ -54,7 +54,7 @@ jobs:
         env:
           CIBW_PLATFORM: ${{ matrix.platform || 'auto' }}
           CIBW_ARCHS: ${{ matrix.archs || 'auto' }}
-          CIBW_BUILD_FRONTEND: uv
+          CIBW_BUILD_FRONTEND: pip
         # Can also be configured directly, using `with:`
         # with:
         #   package-dir: .
